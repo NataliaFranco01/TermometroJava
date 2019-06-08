@@ -11,8 +11,8 @@ import java.awt.event.ActionListener;
 public class NewJFrame extends javax.swing.JFrame {
 
     int temperatura;
-    String m;
-    String n;
+    String subir;
+    String bajar;
     
     public NewJFrame() {
         initComponents();
@@ -152,18 +152,18 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void buttonSubirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSubirActionPerformed
    temperatura=temperatura+1;
-        m= Integer.toString(temperatura);
+        subir= Integer.toString(temperatura);
         
-        TemperaturaActual.setText(m);   // TODO add your handling code here:
+        TemperaturaActual.setText(bajar);   // TODO add your handling code here:
         Barra.setValue(temperatura);        // TODO add your handling code here:
     }//GEN-LAST:event_buttonSubirActionPerformed
 
     private void buttonBajarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBajarActionPerformed
    
          temperatura=temperatura-1;
-        n= Integer.toString(temperatura);
+        bajar= Integer.toString(temperatura);
         
-        TemperaturaActual.setText(n);
+        TemperaturaActual.setText(subir);
         Barra.setValue(temperatura);        // TODO add your handling code here:
     }//GEN-LAST:event_buttonBajarActionPerformed
 
